@@ -1,7 +1,7 @@
 """
-guessing game
+Jeu de devinette
 by: Joseph Howly
-A little game of trying to guess a number from 0-100 randomly chosen b the computer
+Devint un nombre entre 1-100 
 On 15-9-26
 """
 
