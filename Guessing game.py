@@ -1,7 +1,7 @@
 """
 Jeu de devinette
 by: Joseph Howly
-Devint un nombre entre 1-100 
+Devint un nombre entre 1-100
 On 15-9-26
 """
 
@@ -10,22 +10,23 @@ On 15-9-26
 import random
 
 #Variables
+
 play = True
 computer_guess = random.randint(0, 100)
 nb_guessed = 0
 
 
-#The game...
+#Le jeu elle-meme...
 def game():
 
     global computer_guess, play, nb_guessed
-
+    player_guess = None
 
     try:
         player_guess = int(input("Choisi un nombre entre 1 et 100: "))
-    except:
-        exit("Pas de lettres buddy.")
 
+    except ValueError:
+        exit("Pas de lettres buddy.")
 
     if computer_guess == player_guess:
         print("Tu l'as bien eu!")
@@ -58,11 +59,6 @@ def game():
 
 print("J'ai choisi un nombre entre 1 et 100.")
 
-
-
-
-
-
-#Calling the game
+#Appeler le jeu
 while play:
     game()
